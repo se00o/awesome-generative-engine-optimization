@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AEO & GEO High-Signal Schema.org Templates",
+  "description": "Standardized JSON-LD templates designed for AI search engine parsing (Perplexity, ChatGPT Search, Yandex Neuro, Google AI Overviews)",
+  "templates": {
+    "organization_with_entity_graph": {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Название Бренда",
+      "alternateName": "Brand Name",
+      "url": "https://example.com",
+      "logo": "https://example.com/logo.png",
+      "description": "Авторитетное машиночитаемое определение компании (1-2 предложения без лишнего пафоса).",
+      "foundingDate": "2024",
+      "founder": {
+        "@type": "Person",
+        "name": "Имя Фамилия",
+        "jobTitle": "Основатель / Главный архитектор",
+        "sameAs": [
+          "https://t.me/username",
+          "https://habr.com/ru/users/username/"
+        ]
+      },
+      "sameAs": [
+        "https://t.me/brand_channel",
+        "https://vk.com/brand",
+        "https://github.com/brand",
+        "https://vc.ru/u/brand"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+7-999-000-00-00",
+        "contactType": "customer service",
+        "email": "contact@example.com",
+        "areaServed": "RU",
+        "availableLanguage": ["Russian", "English"]
+      }
+    },
+    "aeo_direct_answer_faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Что такое GEO-оптимизация и чем она отличается от SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GEO (Generative Engine Optimization) — это оптимизация сайта для рекомендаций большими языковыми моделями (ChatGPT, Perplexity, Яндекс Нейро). В отличие от классического SEO с фокусом на ключевые слова и ссылки, GEO фокусируется на фактоидных триплетах, структурировании базы знаний и цитируемости в авторитетных источниках."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько времени занимает индексация сайта нейросетями?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Первичное считывание краулерами (GPTBot, PerplexityBot) занимает от 24 до 72 часов при наличии файла llms.txt и пререндеринга. Полное закрепление фактов в векторных кэшах моделей занимает от 2 до 4 недель."
+          }
+        }
+      ]
+    },
+    "aeo_howto_step_by_step": {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Как внедрить протокол llms.txt на сайт",
+      "description": "Пошаговая инструкция по созданию и валидации манифеста llms.txt для поисковых ботов нейросетей.",
+      "totalTime": "PT30M",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Шаг 1: Создание файла",
+          "text": "Создайте текстовый файл llms.txt в корневом каталоге веб-сервера (/llms.txt).",
+          "url": "https://example.com/guide#step1"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Шаг 2: Структурирование описания",
+          "text": "Добавьте H1 с названием бренда, краткое резюме и ссылки на ключевые разделы в Markdown формате.",
+          "url": "https://example.com/guide#step2"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Шаг 3: Настройка CORS и Nginx",
+          "text": "Убедитесь, что сервер отдает заголовок Content-Type: text/plain; charset=utf-8 и разрешает доступ ботам.",
+          "url": "https://example.com/guide#step3"
+        }
+      ]
+    },
+    "voice_and_audio_speakable": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Главная страница",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".hero-direct-answer",
+          ".key-takeaway-summary"
+        ]
+      }
+    }
+  }
+}
