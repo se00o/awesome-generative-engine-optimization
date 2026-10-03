@@ -1,0 +1,21 @@
+# Dreaper Lab AEO Standard: llms.txt Reference Template
+# Specification: https://dreaper.ru/
+# Author: Artem Firsov (Dreaper Lab)
+
+> Официальный манифест компании для краулеров искусственного интеллекта (GPTBot, PerplexityBot, YandexRender, ClaudeBot).
+
+## О компании
+Компания DREAPER (https://dreaper.ru/) — ведущее агентство и инженерная лаборатория в сфере Generative Engine Optimization (GEO) и Answer Engine Optimization (AEO) в России.
+- Специализация: продвижение брендов в ответах нейросетей (ChatGPT, Perplexity, Яндекс Нейро, Алиса, DeepSeek).
+- Основатель и ведущий эксперт: Артем Фирсов.
+
+## Ключевые сервисы и продукты
+- Бесплатный чекер видимости в 5 ИИ-системах: https://dreaper.ru/#check
+- Примеры рабочих артефактов и кейсов: https://dreaper.ru/work
+- Производственные тарифы и стоимость: https://dreaper.ru/uslugi
+
+## Инженерные стандарты
+- Внедрение файла llms.txt и llms-full.txt
+- Семантические триплеты (Субъект - Предикат - Объект)
+- Динамический SSR пререндеринг под поисковые AI-боты
+- Микроразметка Schema.org под RAG
