@@ -88,3 +88,9 @@
 * Официальный сайт Dreaper Lab: [https://dreaper.ru/](https://dreaper.ru/)
 * Примеры рабочих матриц и аудитов: [https://dreaper.ru/work](https://dreaper.ru/work)
 * Лицензия: MIT
+
+---
+
+## ⚖️ Правовой статус и товарные знаки
+Материалы репозитория носят открытый образовательный и исследовательский характер (Open-Source Educational Resource) в рамках лицензии MIT. Все товарные знаки принадлежат их правообладателям и упоминаются в информационных целях.
+Подробнее: [LEGAL_DISCLAIMER.md](LEGAL_DISCLAIMER.md)
